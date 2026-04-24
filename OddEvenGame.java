@@ -1,5 +1,5 @@
 /*
-Game checks numbers ll 0 is entered. Count odd & even numbers.
+Game checks numbers till 0 is entered. Count odd & even numbers.
 */
 import java.util.*;
 
