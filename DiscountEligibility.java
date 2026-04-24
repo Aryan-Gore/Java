@@ -13,8 +13,8 @@ public class DiscountEligibility {
         System.out.print("Enter amount: ");
         double amount = sc.nextDouble();
 
-        System.out.print("Is user premium? (yes/no): ");
-        String premium = sc.next();
+           System.out.print("premium? (1 = Yes, 0 = No): ");
+        int premium = sc.nextInt();
 
         double discount = 0;
 
@@ -30,7 +30,7 @@ public class DiscountEligibility {
         }
 
        
-        if (premium.equalsIgnoreCase("yes")) {
+        if (premium == 1) {
             discount += 5;
         }
 
@@ -38,7 +38,7 @@ public class DiscountEligibility {
         double finalAmount = amount - (amount * discount / 100);
 
    
-        System.out.println("Final Amount = ₹" + finalAmount);
+        System.out.println("Final Amount = " + finalAmount);
 
         sc.close();
     }
