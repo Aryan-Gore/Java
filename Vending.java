@@ -2,19 +2,16 @@ import java.util.*;
 public class Vending{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int total = 0;
-        int trayNo = 0;
-
-    do{
+        int total = 0,trayNo;
+        do{
         System.out.println("Tray1 | Beverages");
         System.out.println("Tray2 | Snacks");
         System.out.println("Tray3 | Chocolates");
 
         System.out.println("Select your tray by using(1/2/3/0(Exit))");
-         trayNo = sc.nextInt();
+        trayNo = sc.nextInt();
         switch(trayNo){
             case 1 :
-
                 {
                     char stay;
                     do{
@@ -35,7 +32,6 @@ public class Vending{
                     System.out.println("Stay on Same Tray(y/n) :");
                     stay = sc.next().charAt(0);
                     }while(stay!='n');
-
                     break;
                 }
             case 2 :
@@ -59,7 +55,6 @@ public class Vending{
                     System.out.println("Stay on Same Tray(y/n) :");
                     stay = sc.next().charAt(0);
                     }while(stay!='n');
-
                     break;
                 }
             case 3 :
@@ -83,11 +78,13 @@ public class Vending{
                     System.out.println("Stay on Same Tray(y/n) :");
                     stay = sc.next().charAt(0);
                     }while(stay!='n');
+                    break;
                 }
-            default : 
-                break;
-        
-            }
-        }while(trayNo!=0);
+                default:
+                    break;
+        }
+
+    }while(trayNo!=0);
+    System.out.println("Your Bill :"+total);
     }
 }
