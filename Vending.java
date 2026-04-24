@@ -86,5 +86,7 @@ public class Vending{
 
     }while(trayNo!=0);
     System.out.println("Your Bill :"+total);
-    }
+    sc.close();
 }
+}
+
