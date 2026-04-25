@@ -32,6 +32,7 @@ public class login_attemt {
         if(!success)
             System.out.println("Login blocked");
 
+        sc.close();
     }
     
 }
