@@ -29,14 +29,10 @@ public class Atm{
             System.out.println("Withdrawal Successful ");
             System.out.println("Remaining Balance: " + (balance - amount));
         }
-
-
-
-
-
-
-        
+     
+        sc.close();
     }
+
 
 }
 
