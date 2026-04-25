@@ -15,11 +15,20 @@ public class Fraud_detection {
         int amount = sc.nextInt();
 
         System.out.println("location mismatch (1 for yes and 0 for no): ");
-        int loc = sc.nextInt();
+        int location = sc.nextInt();
 
         System.out.println("no. of transactions in a  miniute : ");
         int transactions = sc.nextInt();
 
+        if(amount > 50000 && location == 1){
+            System.out.println("fraud detected");
+        }
+        else if (transactions > 3)
+            System.out.println("fraud detected");
+        else 
+            System.out.println("fraud not detected");
+
+        sc.close();
 
     }
 
