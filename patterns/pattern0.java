@@ -1,13 +1,12 @@
 /*
 *
+**
 ***
-*****
-*******
- */
+****
+*/
+import java.util.Scanner;
 
-import java.util.*;
-public class pattern {
-
+public class pattern0 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -15,9 +14,9 @@ public class pattern {
         System.out.println("Enter no. of rows");
         int n  = sc.nextInt();
 
-        for(int i = 0; i<n; i++){
+        for(int i = 0; i<=n; i++){
 
-            for(int j = 0 ; j<2*i+1; j++)
+            for(int j = 0 ; j<i; j++)
             {
                 System.out.print("*");
             }
