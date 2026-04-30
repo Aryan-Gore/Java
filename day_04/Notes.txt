@@ -1,0 +1,10 @@
+                    SDLC(software development life cycle)
+
+
+Feasiblity study 
+
+1. Economic Feasiblity - indicates that project must fit in the available budget to be feasible.
+
+2. Operational Feasiblity - All the operations ans needs to be done are feasible or not.
+
+3. Technical Feasiblity - you will be provided with all the tools techstack and resources for the project.
