@@ -1,10 +1,44 @@
                     SDLC(software development life cycle)
 
 
-Feasiblity study 
+(1) Feasiblity study 
 
 1. Economic Feasiblity - indicates that project must fit in the available budget to be feasible.
 
 2. Operational Feasiblity - All the operations ans needs to be done are feasible or not.
 
 3. Technical Feasiblity - you will be provided with all the tools techstack and resources for the project.
+
+(2) Requirements Analysis 
+
+what are needs of client is analysed in these phase, to caollect all the Requirements and prepare SRS document
+
+(3) Desiging 
+
+(4) Coding 
+
+(5) Testing 
+
+(6) Deployment and maintainance
+
+Home-Work - hollow rectangle , holllow dimond ,
+
+Components of class - 1. Member data 2. Member function 
+
+Member Data - attributes 
+Member funtion - behaviour
+
+byte loader , java interpreter , byte code verification , time spacetradeoff , abs datatype
+
+Encapsulation -> 
+
+
+Abstraction -> Abstract classes - contains abs methods and no abs method 
+ADT- those who do not have theier own implementiation are known as adt , it will be implemented with help of others.
+
+
+
+
+
+
+
