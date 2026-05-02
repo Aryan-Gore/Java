@@ -17,3 +17,10 @@ Types of String - String Class : Immutable , Thread Safe(lock[0/1]), all methods
 SCP- String constant pool (is in jvm)  
 
 s1.Compareto(s2) if +ve s2 is big if -ve s1 is big else 0 means ==
+
+STRING BUILDER AND BUEFFER
+
+String buffer : mutable , final class , Thread safe ,synnchronised methods, Slow operation .
+
+String builder :mutable , final , thread unsafe ,  faast operation.
+homework -> Str functions 
