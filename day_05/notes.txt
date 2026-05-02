@@ -3,4 +3,17 @@ inheritance
   -> multi level inheritance 
   -> hierarcial inheritance 
 
-  Super keyword - to use parent class thing in child class ]
+  Super keyword - to use parent class thing in child class 
+
+plymorphism ->
+       compile time (method overloading) polymorphism and run time polymorphism  (method overriding)
+
+Array list , Hash set ,Hash map , String , Sting BUilder , Linked Hash set 
+
+String -> Seq of character is called string 
+
+Types of String - String Class : Immutable , Thread Safe(lock[0/1]), all methods are Synchronised in nature(one after one done ), slow in nature,final(i.e. can not be inherited) class,
+
+SCP- String constant pool (is in jvm)  
+
+s1.Compareto(s2) if +ve s2 is big if -ve s1 is big else 0 means ==
