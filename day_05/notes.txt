@@ -1,0 +1,6 @@
+inheritance 
+  -> single level inheritance 
+  -> multi level inheritance 
+  -> hierarcial inheritance 
+
+  Super keyword - to use parent class thing in child class ]
