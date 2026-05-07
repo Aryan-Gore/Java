@@ -1,0 +1,8 @@
+        Array 
+
+--> Elements are contigious in memory.
+--> Static size.
+--> Can be accesed using Index.
+ 
+Why indexing Starts from .0
+Address  =  Base Address + Offset <Index> + Size of Array 
