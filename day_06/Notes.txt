@@ -6,3 +6,9 @@
  
 Why indexing Starts from .0
 Address  =  Base Address + Offset <Index> + Size of Array 
+
+        HashSet 
+
+--> Do not Store duplicates 
+--> Random Order 
+--> 
