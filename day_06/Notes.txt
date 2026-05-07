@@ -11,4 +11,11 @@ Address  =  Base Address + Offset <Index> + Size of Array
 
 --> Do not Store duplicates 
 --> Random Order 
---> 
+ 
+find the longest subarray whose sum <= k in a list of elements
+arr = {1,2,1,0,1,1,0,1} , k = 4
+O/p = 5
+
+
+Array Solution has 3 types 
+1. Sliding Window - variable and fixed
