@@ -19,3 +19,7 @@ O/p = 5
 
 Array Solution has 3 types 
 1. Sliding Window - variable and fixed
+
+Home - work -> find len of longest sub array whose sum is greater than k 
+-> find len of longest sub str contains atmost K distinct char 
+s  = "Naman " O/P = 3

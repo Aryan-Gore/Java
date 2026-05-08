@@ -1,0 +1,5 @@
+using wrapper class u can also store null
+
+find len of longesst subarray whose sum = k 
+i/p  1 2 3 -2 5 2 k = 5 O/p 
+1 2 6 4 9 11 
