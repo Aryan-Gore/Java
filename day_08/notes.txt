@@ -1,0 +1,1 @@
+find 2nd largest and 3rd smallest no in an array.
