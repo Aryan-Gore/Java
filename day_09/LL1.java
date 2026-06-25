@@ -255,6 +255,74 @@ static boolean isPallindrome(Node head){
     return true;
 }
 
+static boolean hasCycle(Node head) {
+
+    if (head == null) {
+        return false;
+    }
+
+    Node slow = head;
+    Node fast = head;
+
+    while (fast != null && fast.next != null) {
+
+        slow = slow.next;
+        fast = fast.next.next;
+
+        if (slow == fast) {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+//sr=tart of cycle
+
+static Node startOfCycle(Node head){
+
+       if(head == null)
+          return null;
+
+       Node slow = head;
+       Node fast = head;
+
+       while (fast != null && fast.next != null) {
+         slow = slow.next;
+         fast = fast.next.next;
+
+         if(slow == fast){
+
+            slow = head;
+            while(slow != fast){
+
+                slow = slow.next;
+                fast = fast.next;
+            }
+            return slow;
+         }
+       }
+       return null;
+}
+
+static Node merge(Node head1 , Node head2){
+        
+    if(head1 == null){
+        return head2;
+    }
+    if(head2 == null){
+        return head1;
+    }
+
+    Node temp = head1;
+
+    while(temp.next != null){
+        temp = temp.next;
+    }
+    temp.next = head2;
+    
+    return head1;
+}
 static void print(Node head){
 
     if(head == null){
