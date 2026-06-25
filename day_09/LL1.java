@@ -1,3 +1,4 @@
+public class LL1 {
 // Node of Linked List
 static class Node {
     int data;
@@ -212,7 +213,49 @@ static Node rev(Node head) {
     return prev;
 }
 
-       
+//middleNode
+static Node middleNode(Node head){
+
+       if (head == null){
+        return head ;
+       }
+       Node slow = head, fast = head;
+            
+      
+       while(fast != null && fast.next.next != null){
+                slow = slow.next;
+                fast = fast.next.next;
+       }
+
+        return slow;
+}
+
+//pallindrome
+static boolean isPallindrome(Node head){
+     
+     if(head == null)
+        return true ;
+
+     Node middle = middleNode(head);
+
+     Node head2 = rev(middle.next);
+
+     Node temp1 = head;
+     Node temp2 = head2;
+
+     while (temp1 != null && temp2 != null) {
+        
+        if(temp1.data != temp2.data){
+            return false;
+        }
+            temp1 = temp1.next;
+            temp2 = temp2.next;
+
+     }
+    return true;
+}
  public static void main(String[] args) {
 
         }
+
+ }
