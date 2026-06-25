@@ -10,64 +10,64 @@ static class Node {
         this.next = null;
     }
 
-    // Insert at Head
-    static Node addAtHead(int data, Node head) {
+}
+// Insert at Head
+static Node addAtHead(int data, Node head) {
 
-        Node newNode = new Node(data);
+    Node newNode = new Node(data);
 
-        if (head == null) {
-            return newNode;
-        }
+    if (head == null) {
+        return newNode;
+    }
 
-        newNode.next = head;
-        head = newNode;
+    newNode.next = head;
+    head = newNode;
 
+    return head;
+}
+
+// Insert at Tail
+static Node addAtTail(int data, Node head) {
+
+    Node newNode = new Node(data);
+
+    if (head == null) {
+        return newNode;
+    }
+
+    Node temp = head;
+
+    while (temp.next != null) {
+        temp = temp.next;
+    }
+
+    temp.next = newNode;
+
+    return head;
+}
+
+// Insert at Position
+static Node addAtN(int data, int pos, Node head) {
+
+    if (pos == 0) {
+        return addAtHead(data, head);
+    }
+
+    Node newNode = new Node(data);
+    Node temp = head;
+
+    for (int i = 0; i < pos - 1 && temp != null; i++) {
+        temp = temp.next;
+    }
+
+    if (temp == null) {
         return head;
     }
 
-    // Insert at Tail
-    static Node addAtTail(int data, Node head) {
+    newNode.next = temp.next;
+    temp.next = newNode;
 
-        Node newNode = new Node(data);
-
-        if (head == null) {
-            return newNode;
-        }
-
-        Node temp = head;
-
-        while (temp.next != null) {
-            temp = temp.next;
-        }
-
-        temp.next = newNode;
-
-        return head;
-    }
-
-    // Insert at Position
-    static Node addAtN(int data, int pos, Node head) {
-
-        if (pos == 0) {
-            return addAtHead(data, head);
-        }
-
-        Node newNode = new Node(data);
-        Node temp = head;
-
-        for (int i = 0; i < pos - 1 && temp != null; i++) {
-            temp = temp.next;
-        }
-
-        if (temp == null) {
-            return head;
-        }
-
-        newNode.next = temp.next;
-        temp.next = newNode;
-
-        return head;
-    }
+    return head;
 }
 
 // Delete Head Node
@@ -254,8 +254,23 @@ static boolean isPallindrome(Node head){
      }
     return true;
 }
+
+static void print(Node head){
+
+    if(head == null){
+        System.out.println("enpty");
+    }
+
+    Node temp = head;
+
+    while(temp != null){
+        System.out.print(temp.data+"->");
+        temp = temp.next;
+    }
+      System.out.println("NULL");
+}
  public static void main(String[] args) {
 
-        }
-
+    
  }
+}
