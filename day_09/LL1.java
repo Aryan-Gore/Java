@@ -148,6 +148,29 @@ public class LL1 {
     return head;
 }
 
+
+static Node update(Node head ,int target, int data){
+
+    if(head == null){
+        return head;
+    }
+
+    Node temp = head;
+
+      while(temp.data!=target){
+           temp = temp.next;
+      }
+     
+    if (temp != null) {
+        
+        temp.data = data;
+    }
+
+      return head;
+}
+
+
+
     public static void main(String[] args) {
 
     }
