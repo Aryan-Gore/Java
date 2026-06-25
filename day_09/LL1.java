@@ -320,9 +320,46 @@ static Node merge(Node head1 , Node head2){
         temp = temp.next;
     }
     temp.next = head2;
-    
+
     return head1;
 }
+
+static Node add(Node head1 , Node head2){
+      
+    Node temp1 = rev(head1);
+    Node temp2 = rev(head2);
+
+    Node result = new Node (0);
+    Node tail = result;
+
+    int carry = 0;
+
+    int sum = 0;
+
+
+    while(temp1 != null || temp2 != null || carry !=0){
+       
+            sum = carry;
+
+        if (temp1  != null) {
+            sum += temp1.data;
+            temp1 = temp1.next;
+        }
+
+        if (temp2 != null) {
+            sum += temp2.data;
+            temp2 = temp2.next;
+        }
+
+        carry = sum / 10;
+
+        tail.next = new Node(sum % 10);
+        tail = tail.next;
+
+    }
+    return rev(result.next);
+}
+
 static void print(Node head){
 
     if(head == null){
