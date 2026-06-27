@@ -5,3 +5,10 @@ STACK
 ---> Work on lifo principle.
 ---> Its a abs DS.
 ---> implemented in 3 ways Array, LinkedList and collection framework
+
+Question : find the next greatest element in a array of size n;
+
+arr = 2 1 5 9 7 10
+o/p = 5 5 9 10 10 -1
+
+# Monotonic Stack store in a non decreasing order

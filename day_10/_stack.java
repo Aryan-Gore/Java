@@ -1,5 +1,6 @@
 import java.util.Deque;
 import java.util.LinkedList;
+
 import java.util.Stack;
 //Stack implementation Using Linkedlist
 public class _stack {
@@ -178,7 +179,7 @@ static boolean contains(int key){
 }
 
 //mid of stack
-static int midAverage() {
+static double mid() {
 
     if (top == null)
         return -1;
@@ -187,18 +188,18 @@ static int midAverage() {
     Node fast = top;
     Node prev = null;
 
-    while (fast != null && fast.next != null) {
+    while (fast.next != null && fast.next.next != null) {
         prev = slow;
         slow = slow.next;
         fast = fast.next.next;
     }
 
     if (fast == null)
-        return (prev.data + slow.data) / 2;
+        return (prev.data + slow.data) / 2.0;
 
     return slow.data;
 }
-//contains , merge 2 stacks , add 2 Stack
+
 public static void main(String[] args) {
      push(10);
      push(20);
