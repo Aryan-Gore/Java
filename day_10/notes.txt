@@ -6,9 +6,14 @@ STACK
 ---> Its a abs DS.
 ---> implemented in 3 ways Array, LinkedList and collection framework
 
-Question : find the next greatest element in a array of size n;
+Question : find the next greatest and prev greater element in a array of size n;
 
 arr = 2 1 5 9 7 10
 o/p = 5 5 9 10 10 -1
+
+Question : we need to count how many days the price of stock is less than or equal to current price 
+we are given with a set of stock prices
+arr = 50 80 60 70 60 100 90 
+O/P = 1  1   2  3  3  6  6
 
 # Monotonic Stack store in a non decreasing order
