@@ -374,6 +374,24 @@ static void print(Node head){
     }
       System.out.println("NULL");
 }
+
+// sorting a linked list 
+static Node Sort(Node head ){
+       
+    if(head == null){
+        return head;
+    }
+
+    Node temp = head ;
+    Node head2 = new Node(head.data);
+  
+    while(temp != null){
+            
+        if(temp)
+       
+    }
+    return head;
+}
  public static void main(String[] args) {
 
     

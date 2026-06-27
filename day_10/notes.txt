@@ -1,0 +1,7 @@
+27/06/26
+
+STACK
+
+---> Work on lifo principle.
+---> Its a abs DS.
+---> implemented in 3 ways Array, LinkedList and collection framework
