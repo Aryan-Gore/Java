@@ -387,7 +387,10 @@ static Node Sort(Node head ){
   
     while(temp != null){
             
-        if(temp)
+        if(temp.data < temp.next.data){
+
+            
+        }
        
     }
     return head;

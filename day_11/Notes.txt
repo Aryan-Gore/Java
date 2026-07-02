@@ -1,0 +1,11 @@
+07/02/2026
+
+QUEUE -> works on fifo principal 
+-> its a linear data structure 
+-> Abstract Data Structure 
+-> can be implemented in 3 ways 
+                            1. Array 
+                            2. Linkelist 
+                            3. Built in class 
+
+-> operation : DEQUEUE , ENQUEUE , PEAK ,REVERSE ,CONTAINS, IMPLEMENT QUEUE USING STACK.

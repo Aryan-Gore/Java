@@ -6,6 +6,8 @@ STACK
 ---> Its a abs DS.
 ---> implemented in 3 ways Array, LinkedList and collection framework
 
+# Monotonic Stack store in a non decreasing order
+
 Question : find the next greatest and prev greater element in a array of size n;
 
 arr = 2 1 5 9 7 10
@@ -16,4 +18,4 @@ we are given with a set of stock prices
 arr = 50 80 60 70 60 100 90 
 O/P = 1  1   2  3  3  6  6
 
-# Monotonic Stack store in a non decreasing order
+Question : remove 3 digit to make smallest no 751246925
