@@ -97,7 +97,8 @@ public class MergeSort {
         System.out.println("Original Array:");
         printArray(arr);
 
-        // Call Merge Sort
+        // Cal
+        // l Merge Sort
         mergeSort(arr, 0, arr.length - 1);
 
         System.out.println("Sorted Array:");
