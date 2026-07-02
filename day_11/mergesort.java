@@ -1,63 +1,106 @@
 package day_11;
 
-public class mergesort {
+public class MergeSort {
 
-    static void mergesort(int[] arr , int left , int right){
-        
+    // Function to divide the array into smaller parts
+    static void mergeSort(int[] arr, int left, int right) {
 
-        if(left < right){
-          int  mid = left + (right - left )/2;
-             mergesort(arr, left, mid);
-             mergesort(arr, mid + 1, right);
+        // Base condition: stop when only one element is left
+        if (left < right) {
 
-             merge(arr,left,mid,right);
+            // Find the middle index
+            int mid = left + (right - left) / 2;
+
+            // Sort the left half
+            mergeSort(arr, left, mid);
+
+            // Sort the right half
+            mergeSort(arr, mid + 1, right);
+
+            // Merge the two sorted halves
+            merge(arr, left, mid, right);
         }
     }
 
-    static void merge(int[] arr , int left , int mid , int right){
+    // Function to merge two sorted subarrays
+    static void merge(int[] arr, int left, int mid, int right) {
 
-        int n1 = left - right + 1;
-        int n2 = left - mid ;
-        
-        int[] leftarray = new int[n1];
-        int[] rightarray = new int[n2];
+        // Size of left subarray
+        int n1 = mid - left + 1;
 
-        for(int i = 0 ; i <=n1 ;i++){
-            leftarray[i] = arr[left + i];
+        // Size of right subarray
+        int n2 = right - mid;
+
+        // Temporary arrays
+        int[] leftArray = new int[n1];
+        int[] rightArray = new int[n2];
+
+        // Copy elements into left temporary array
+        for (int i = 0; i < n1; i++) {
+            leftArray[i] = arr[left + i];
         }
-        for(int i = 0 ; i <=n2 ;i++){
-            rightarray[i] = arr[mid+1+ i];
+
+        // Copy elements into right temporary array
+        for (int i = 0; i < n2; i++) {
+            rightArray[i] = arr[mid + 1 + i];
         }
-        
-        int i = 0, j = 0 , k = left;
 
-        while(i < n1 && j <n2){
+        // Initial indexes
+        int i = 0;      // Left array index
+        int j = 0;      // Right array index
+        int k = left;   // Original array index
 
-            if(leftarray[i] <= rightarray[j]){   
-            arr[k] = leftarray[i];
+        // Compare elements of both arrays and copy the smaller one
+        while (i < n1 && j < n2) {
+
+            if (leftArray[i] <= rightArray[j]) {
+                arr[k] = leftArray[i];
+                i++;
+            } else {
+                arr[k] = rightArray[j];
+                j++;
+            }
+
             k++;
-            i++;
-        }else{
-            arr[k]=rightarray[j];
-            i++;
-            j++;
         }
-        
+
+        // Copy remaining elements of left array (if any)
+        while (i < n1) {
+            arr[k] = leftArray[i];
+            i++;
+            k++;
+        }
+
+        // Copy remaining elements of right array (if any)
+        while (j < n2) {
+            arr[k] = rightArray[j];
+            j++;
+            k++;
+        }
     }
 
-    while(i < n1){
-        arr[k] = leftarray[i];
-        k++;
-        i++;
+    // Function to print the array
+    static void printArray(int[] arr) {
+
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+
+        System.out.println();
     }
-   
-    while(j < n2){
-        arr[k] = rightarray[j];
-        k++;
-        j++;
-    }
-}
+
     public static void main(String[] args) {
-        
+
+        // Input array
+        int[] arr = {8, 4, 2, 7, 1, 3, 6, 5};
+
+        System.out.println("Original Array:");
+        printArray(arr);
+
+        // Call Merge Sort
+        mergeSort(arr, 0, arr.length - 1);
+
+        System.out.println("Sorted Array:");
+        printArray(arr);
     }
 }
