@@ -11,4 +11,4 @@ QUEUE -> works on fifo principal
 -> operation : DEQUEUE , ENQUEUE , PEAK ,REVERSE ,CONTAINS, IMPLEMENT QUEUE USING STACK.
 
 ===============================SORTING===============================
-selection , bubble ,insertion ,merge , quick , count , radix
+selection , bubble ,insertion ,merge , quick , count , radix , bucket 
