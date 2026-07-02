@@ -14,7 +14,6 @@ public class QueueUsingStack {
     static int dequeue() {
 
         if (s1.isEmpty()) {
-            System.out.println("Queue is Empty");
             return -1;
         }
 
