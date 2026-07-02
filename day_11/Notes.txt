@@ -9,3 +9,6 @@ QUEUE -> works on fifo principal
                             3. Built in class 
 
 -> operation : DEQUEUE , ENQUEUE , PEAK ,REVERSE ,CONTAINS, IMPLEMENT QUEUE USING STACK.
+
+===============================SORTING===============================
+selection , bubble ,insertion ,merge , quick , count , radix
